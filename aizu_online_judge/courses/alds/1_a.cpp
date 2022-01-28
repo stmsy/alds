@@ -2,7 +2,7 @@
 
 using namespace std;
 
-static const int N = 100;
+static const int MAX = 100;
 
 void print(int A[], int N);
 void insertionSort(int A[], int N);
@@ -12,7 +12,7 @@ void insertionSort(int A[], int N);
  */
 int main() {
   int N;
-  int A[100];
+  int A[MAX];
 
   cin >> N;
   for (int i = 0; i < N; i++) cin >> A[i];
