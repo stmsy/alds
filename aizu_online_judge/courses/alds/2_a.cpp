@@ -42,5 +42,6 @@ int bubbleSort(int A[], int N) {
       }
     }
   }
+
   return num_swapped;
 }
