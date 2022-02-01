@@ -8,7 +8,7 @@ void print(int A[], int N);
 int selectionSort(int A[], int N);
 
 /**
- * https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/1/ALDS1_1_A
+ * https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/2/ALDS1_2_B
  */
 int main() {
   int N;
@@ -36,7 +36,7 @@ void print(int A[], int N) {
 
 /* Perform a selection sort on an array */
 int selectionSort(int A[], int N) {
-  int i, j, min_j;
+  int min_j;
   int num_swapped = 0;
 
   for (int i = 0; i < N - 1; i++) {
