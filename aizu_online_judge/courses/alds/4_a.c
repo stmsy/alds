@@ -20,6 +20,8 @@ int main() {
   }
 
   printf("%d\n", sum);
+
+  return 0;
 }
 
 /* Perform a linear search on an array */

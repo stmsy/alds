@@ -24,6 +24,8 @@ int main() {
   }
 
   cout << sum << endl;
+
+  return 0;
 }
 
 /* Perform a linear search on an array */
