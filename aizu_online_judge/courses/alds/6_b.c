@@ -29,6 +29,7 @@ int main() {
   return 0;
 }
 
+// Partition an array of integers by the last-indexed element
 int partition(int p, int r) {
   int target, i, j, tmp;
 

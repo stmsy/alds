@@ -57,6 +57,7 @@ void merge(int A[], int n, int left, int mid, int right) {
   }
 }
 
+// Perform a merge sort on an array of integers
 void mergeSort(int A[], int n, int left, int right) {
   if (left + 1 < right) {
     int mid = (left + right) / 2;
