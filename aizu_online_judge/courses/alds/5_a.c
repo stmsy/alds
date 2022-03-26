@@ -2,7 +2,7 @@
 
 #define MAX 20
 
-int recursive_addition(int i, int m);
+int recursiveAddition(int i, int m);
 
 int n;
 int A[MAX];
@@ -19,7 +19,7 @@ int main() {
   scanf("%d", &q);
   for (i = 0; i < q; i++) {
     scanf("%d", &M);
-    if (recursive_addition(0, M)) printf("yes\n");
+    if (recursiveAddition(0, M)) printf("yes\n");
     else printf("no\n");
   }
 
@@ -27,11 +27,11 @@ int main() {
 }
 
 /* Pick integers from sequence and add recursively */
-int recursive_addition(int i, int m) {
+int recursiveAddition(int i, int m) {
   if (m == 0) return 1;
   if (i >= n) return 0;
 
-  int result = recursive_addition(i+1, m) || recursive_addition(i+1, m-A[i]);
+  int result = recursiveAddition(i+1, m) || recursiveAddition(i+1, m-A[i]);
 
   return result;
 }
