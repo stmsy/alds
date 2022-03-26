@@ -2,11 +2,10 @@
 
 using namespace std;
 
-static const int MAX 50000;
-static const int SENTINEL 2000000000
+#define MAX 500000
+#define SENTINEL 2000000000
 
-int INIT_SIZE = MAX / 2 + 2;
-int LEFT[INIT_SIZE], RIGHT[INIT_SIZE];
+int LEFT[MAX/2 + 2], RIGHT[MAX/2 + 2];
 int counter;
 
 void merge(int A[], int n, int left, int mid, int right);
